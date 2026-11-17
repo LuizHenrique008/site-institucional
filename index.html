@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça o VAN ESCOLAR: um projeto acadêmico que explora a tecnologia para apoiar a organização do transporte escolar."
+    />
+    <meta name="theme-color" content="#0F223D" />
+    <title>VAN ESCOLAR — Um novo caminho para o transporte escolar</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <!-- Símbolos vetoriais locais: sem bibliotecas ou requisições externas. -->
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="icon-van" viewBox="0 0 24 24">
+        <path
+          d="M4 17H3V7a2 2 0 0 1 2-2h10a3 3 0 0 1 2.6 1.5L21 12v5h-2M8 17h7M4 10h15M8 5v5M13 5v5M21 13h-3"
+        />
+        <circle cx="6" cy="17" r="2" />
+        <circle cx="17" cy="17" r="2" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="6" height="6" rx="1.4" />
+        <rect x="14" y="4" width="6" height="6" rx="1.4" />
+        <rect x="4" y="14" width="6" height="6" rx="1.4" />
+        <rect x="14" y="14" width="6" height="6" rx="1.4" />
+      </symbol>
+      <symbol id="icon-route" viewBox="0 0 24 24">
+        <circle cx="6" cy="5" r="2" />
+        <circle cx="18" cy="19" r="2" />
+        <path d="M8 5h7a4 4 0 0 1 0 8H9a3 3 0 0 0 0 6h7" />
+      </symbol>
+      <symbol id="icon-chat" viewBox="0 0 24 24">
+        <path d="M20 11a8 8 0 0 1-8 8H5l-3 3V11a9 9 0 0 1 18 0Z" />
+        <path d="M7 10h8m-8 4h5" />
+      </symbol>
+      <symbol id="icon-person" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="3" />
+        <path d="M5 21v-2a7 7 0 0 1 14 0v2" />
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m6 9 6 6 6-6" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" id="cabecalho">
+      <div class="header-inner container">
+        <!-- Substitua o símbolo pelo logotipo definitivo quando disponível. -->
+        <a class="brand" href="#inicio" aria-label="VAN ESCOLAR — Início"
+          ><span class="brand-symbol"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-van" /></svg></span
+          ><span>VAN ESCOLAR<span class="brand-period">.</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacao"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="navegacao" aria-label="Navegação principal">
+          <a class="nav-link is-active" href="#inicio" aria-current="location"
+            >Início</a
+          >
+          <a class="nav-link" href="#demonstracao">Demonstração</a>
+          <a class="nav-link" href="#recursos">Recursos</a>
+          <a class="nav-link" href="#como-funciona">Como funciona</a>
+          <a class="nav-link" href="#equipe">Equipe</a>
+          <a class="nav-link" href="#sobre">Sobre</a>
+          <a class="button button-small nav-cta" href="#sobre"
+            >Conheça o projeto
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-arrow" /></svg
+          ></a>
+        </nav>
+        <a class="button button-small header-cta" href="#sobre"
+          >Conheça o projeto
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-arrow" /></svg
+        ></a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <h1 class="visually-hidden" id="hero-title">
+          VAN ESCOLAR: um novo caminho para o transporte escolar
+        </h1>
+        <div class="hero-eyebrow">
+          <span class="status-dot"></span> UM PROJETO. NOVOS CAMINHOS.
+        </div>
+        <div
+          class="device-stage"
+          id="demonstracao"
+          role="img"
+          aria-label="Mockup de smartphone com tela inteiramente branca, reservada para futuras imagens do aplicativo."
+        >
+          <!-- MOCKUP: mantenha .smartphone-screen vazia nesta versão.
+             Imagens reais poderão ser inseridas somente dentro dela no futuro. -->
+          <div class="smartphone">
+            <span class="smartphone-speaker" aria-hidden="true"></span>
+            <div class="smartphone-screen"></div>
+            <span
+              class="smartphone-button smartphone-button-volume"
+              aria-hidden="true"
+            ></span>
+            <span
+              class="smartphone-button smartphone-button-power"
+              aria-hidden="true"
+            ></span>
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span class="caption-line"></span>
+          <p>Um novo olhar para o transporte escolar.</p>
+          <span class="caption-line"></span>
+        </div>
+        <a class="explore-link" href="#recursos"
+          >Explore a proposta
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-chevron" /></svg
+        ></a>
+        <div class="hero-bottom container" aria-hidden="true">
+          <span>PROJETO ACADÊMICO · TCC</span
+          ><span>ORGANIZAÇÃO EM CADA TRAJETO</span>
+        </div>
+      </section>
+
+      <section
+        class="section resources-section"
+        id="recursos"
+        aria-labelledby="resources-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span>01</span> A PROPOSTA</p>
+              <h2 id="resources-title">
+                Recursos do aplicativo<span class="title-dot">.</span>
+              </h2>
+            </div>
+            <p class="section-intro">
+              Ideias que orientam o desenvolvimento de uma rotina mais
+              organizada no transporte escolar.
+            </p>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card reveal">
+              <div class="card-top">
+                <span class="icon-box"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-van" /></svg></span
+                ><span class="card-index">01</span>
+              </div>
+              <h3>Gestão de<br />transporte escolar</h3>
+              <p>
+                Uma proposta para apoiar a organização das rotinas do transporte
+                escolar.
+              </p>
+            </article>
+            <article class="resource-card reveal">
+              <div class="card-top">
+                <span class="icon-box"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-grid" /></svg></span
+                ><span class="card-index">02</span>
+              </div>
+              <h3>Organização de<br />informações</h3>
+              <p>
+                Informações estruturadas para facilitar a consulta e a
+                compreensão.
+              </p>
+            </article>
+            <article class="resource-card reveal">
+              <div class="card-top">
+                <span class="icon-box"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-route" /></svg></span
+                ><span class="card-index">03</span>
+              </div>
+              <h3>Acompanhamento<br />do transporte</h3>
+              <p>
+                Um conceito voltado a facilitar o acesso às informações do
+                transporte.
+              </p>
+            </article>
+            <article class="resource-card reveal">
+              <div class="card-top">
+                <span class="icon-box"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-chat" /></svg></span
+                ><span class="card-index">04</span>
+              </div>
+              <h3>Comunicação e<br />praticidade</h3>
+              <p>
+                Uma proposta para tornar os processos mais claros e práticos no
+                dia a dia.
+              </p>
+            </article>
+          </div>
+          <p class="section-note">
+            <span class="note-mark" aria-hidden="true">i</span> Conceitos em
+            desenvolvimento. As funcionalidades serão detalhadas conforme a
+            evolução do projeto.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section steps-section"
+        id="como-funciona"
+        aria-labelledby="steps-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span>02</span> COMO FUNCIONA</p>
+              <h2 id="steps-title">
+                Da organização ao dia a dia<span class="title-dot">.</span>
+              </h2>
+            </div>
+            <p class="section-intro">
+              Três etapas que representam a proposta de uso do aplicativo.
+            </p>
+          </div>
+          <!-- Textos conceituais, preparados para atualização com o fluxo real. -->
+          <ol class="steps-list">
+            <li class="step reveal">
+              <div class="step-marker">
+                <span>01</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-arrow" />
+                </svg>
+              </div>
+              <h3>Cadastro e organização</h3>
+              <p>
+                Organizar as informações necessárias às rotinas do transporte
+                escolar.
+              </p>
+            </li>
+            <li class="step reveal">
+              <div class="step-marker">
+                <span>02</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-arrow" />
+                </svg>
+              </div>
+              <h3>Gerenciamento das informações</h3>
+              <p>
+                Estruturar os dados para facilitar sua consulta e atualização.
+              </p>
+            </li>
+            <li class="step reveal">
+              <div class="step-marker">
+                <span>03</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-route" />
+                </svg>
+              </div>
+              <h3>Acompanhamento e utilização</h3>
+              <p>
+                Consultar as informações disponíveis e apoiar as atividades do
+                dia a dia.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        class="section team-section"
+        id="equipe"
+        aria-labelledby="team-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span>03</span> QUEM FAZ ACONTECER</p>
+              <h2 id="team-title">
+                Pessoas por trás do projeto<span class="title-dot">.</span>
+              </h2>
+            </div>
+            <p class="section-intro">
+              Um espaço para apresentar os integrantes responsáveis pelo
+              desenvolvimento deste TCC.
+            </p>
+          </div>
+          <!-- Duplique ou remova os cards conforme a composição real da equipe. -->
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <div class="team-photo">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-person" /></svg
+                ><span>Foto do integrante</span>
+              </div>
+              <div class="team-info">
+                <h3>Nome do integrante</h3>
+                <p class="team-role">Função no projeto</p>
+                <p>
+                  Breve apresentação do integrante e de sua contribuição para o
+                  projeto.
+                </p>
+              </div>
+            </article>
+            <article class="team-card reveal">
+              <div class="team-photo">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-person" /></svg
+                ><span>Foto do integrante</span>
+              </div>
+              <div class="team-info">
+                <h3>Nome do integrante</h3>
+                <p class="team-role">Função no projeto</p>
+                <p>
+                  Breve apresentação do integrante e de sua contribuição para o
+                  projeto.
+                </p>
+              </div>
+            </article>
+            <article class="team-card reveal">
+              <div class="team-photo">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-person" /></svg
+                ><span>Foto do integrante</span>
+              </div>
+              <div class="team-info">
+                <h3>Nome do integrante</h3>
+                <p class="team-role">Função no projeto</p>
+                <p>
+                  Breve apresentação do integrante e de sua contribuição para o
+                  projeto.
+                </p>
+              </div>
+            </article>
+          </div>
+          <p class="team-note">
+            Apresentações da equipe serão adicionadas em breve.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-section" id="sobre" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-title reveal">
+            <p class="eyebrow"><span>04</span> SOBRE O PROJETO</p>
+            <h2 id="about-title">
+              Tecnologia para<br />abrir caminhos<span>.</span>
+            </h2>
+            <div class="academic-label">
+              <span class="status-dot"></span> TRABALHO DE CONCLUSÃO DE CURSO
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <p>
+              O VAN ESCOLAR é um projeto acadêmico que propõe o desenvolvimento
+              de uma solução tecnológica voltada ao gerenciamento do transporte
+              escolar.
+            </p>
+            <p>
+              O objetivo é explorar como a tecnologia pode melhorar a
+              organização e facilitar os processos associados a essa atividade,
+              com uma experiência simples e acessível.
+            </p>
+            <p class="about-footnote">
+              Esta página acompanha a proposta e será atualizada conforme o
+              desenvolvimento do projeto.
+            </p>
+            <a class="about-link" href="#inicio"
+              >Voltar ao início
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-arrow" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="#inicio"
+              ><span class="brand-symbol"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-van" /></svg></span
+              ><span>VAN ESCOLAR<span class="brand-period">.</span></span></a
+            >
+            <p>Organização em cada trajeto.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Navegação do rodapé">
+            <a href="#demonstracao">Demonstração</a
+            ><a href="#recursos">Recursos</a
+            ><a href="#como-funciona">Como funciona</a
+            ><a href="#equipe">Equipe</a><a href="#sobre">Sobre</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span id="current-year">2026</span> VAN ESCOLAR. Projeto
+            acadêmico.
+          </p>
+          <p>Desenvolvido como Trabalho de Conclusão de Curso.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
