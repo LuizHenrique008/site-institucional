@@ -1,4 +1,4 @@
-# VAN ESCOLAR — Site institucional
+# BoraVan — Site institucional
 
 Site de um Trabalho de Conclusão de Curso sobre uma proposta de aplicativo de gerenciamento de transporte escolar. Desenvolvido com HTML5, CSS3 e JavaScript puro, sem frameworks, instalação de pacotes ou compilação.
 
@@ -30,7 +30,7 @@ site-institucional/
 
 ## Conteúdo e manutenção
 
-- **Identidade:** nome e símbolo provisórios estão em `.brand` no cabeçalho e no rodapé. Cores e espaçamentos estão nas variáveis de `:root` em `css/style.css`.
+- **Identidade:** a assinatura `.brand` no cabeçalho e no rodapé usa a apresentação da imagem BoraVan enviada: BORA branco e VAN amarelo, em caixa alta, negrito e itálico sobre marinho. É uma adaptação tipográfica em HTML/CSS, não o arquivo original da logo. A imagem estava visível na conversa, sem arquivo disponível no checkout; a fonte e os tons são aproximações visuais da referência. A paleta fica em `:root`: marinho `#032047`, amarelo `#FFCC00`, branco e tons neutros. Substitua a assinatura pelo arquivo original quando ele estiver disponível em `assets/images`, preservando o texto alternativo BoraVan e suas proporções. O amarelo aparece nos botões e detalhes; textos pequenos continuam em marinho para manter o contraste.
 - **Smartphone:** estrutura independente em `.device-stage`, com moldura `.smartphone` e tela `.smartphone-screen`. A tela está totalmente branca e vazia por requisito desta etapa. Não há interfaces, ícones ou textos internos. Quando autorizado, insira imagens reais somente em `.smartphone-screen`. O alto-falante fica na moldura externa.
 - **Recursos e etapas:** os textos em `index.html` são conceituais e editáveis. Não comprovam funcionalidades já implementadas no aplicativo.
 - **Equipe:** os três cards são espaços reservados, não representam um número confirmado de integrantes. Duplique ou remova `.team-card` conforme necessário e substitua foto, nome, função e descrição pelos dados reais.

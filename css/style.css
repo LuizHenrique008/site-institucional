@@ -7,8 +7,10 @@
   font-display: swap;
 }
 :root {
-  --navy: #0f223d;
-  --blue: #3768bd;
+  --navy: #032047;
+  --accent: #ffcc00;
+  --accent-hover: #e8ba00;
+  --accent-soft: #fff7d6;
   --text: #566477;
   --muted: #758194;
   --line: #e4e9f0;
@@ -59,12 +61,12 @@ a {
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid var(--blue);
+  outline: 3px solid var(--navy);
   outline-offset: 6px;
   border-radius: 4px;
 }
 ::selection {
-  background: #dce8fc;
+  background: var(--accent);
   color: var(--navy);
 }
 .container {
@@ -116,9 +118,9 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background: var(--navy);
-  color: var(--white);
-  border: 1px solid var(--navy);
+  background: var(--accent);
+  color: var(--navy);
+  border: 1px solid var(--accent);
   border-radius: 7px;
   font-weight: 550;
   transition:
@@ -127,9 +129,10 @@ a:focus-visible {
     box-shadow 0.2s;
 }
 .button:hover {
-  background: #1b3557;
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 5px 12px #0f223d15;
+  box-shadow: 0 5px 12px #03204715;
 }
 .button-small {
   padding: 12px 18px;
@@ -142,7 +145,7 @@ a:focus-visible {
   height: 16px;
 }
 
-/* Navegação fixa; o símbolo poderá ser substituído pelo logotipo final. */
+/* Identidade BoraVan: assinatura em itálico, branco e amarelo sobre marinho. */
 .site-header {
   position: fixed;
   inset: 0 0 auto;
@@ -153,7 +156,7 @@ a:focus-visible {
   transition: box-shadow 0.25s;
 }
 .site-header.is-scrolled {
-  box-shadow: 0 5px 24px #0f223d08;
+  box-shadow: 0 5px 24px #03204708;
 }
 .header-inner {
   height: 100%;
@@ -165,29 +168,29 @@ a:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 188px;
+  height: 44px;
+  padding: 7px 13px 9px;
+  border-radius: 6px;
+  background: var(--navy);
+  line-height: 1;
+}
+.brand-wordmark {
+  display: inline-flex;
   white-space: nowrap;
-  font-size: 15px;
-  font-weight: 750;
-  letter-spacing: 1.6px;
-  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
-.brand-symbol {
-  display: grid;
-  place-items: center;
-  width: 33px;
-  height: 33px;
-  border: 1px solid #dce5f0;
-  border-radius: 8px;
-  background: #f8fafd;
-  color: var(--navy);
+.brand-bora {
+  color: var(--white);
 }
-.brand-symbol .icon {
-  width: 23px;
-  height: 23px;
-}
-.brand-period {
-  color: var(--blue);
+.brand-van {
+  color: var(--accent);
 }
 .main-nav {
   display: flex;
@@ -211,7 +214,7 @@ a:focus-visible {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--blue);
+  background: var(--accent);
   transform: scaleX(0);
   transition: transform 0.2s;
 }
@@ -251,7 +254,7 @@ a:focus-visible {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #487ac9;
+  background: var(--accent);
   display: inline-block;
   flex-shrink: 0;
 }
@@ -268,12 +271,12 @@ a:focus-visible {
   aspect-ratio: 1/2.02;
   padding: 14px 10px 10px;
   background: var(--navy);
-  border: 2px solid #1c3659;
+  border: 2px solid #17385e;
   border-radius: 43px;
   box-shadow:
-    inset 0 0 0 2px #344b68,
-    0 24px 48px -22px #0f223d4a,
-    0 5px 10px #0f223d0c;
+    inset 0 0 0 2px #304d70,
+    0 24px 48px -22px #0320474a,
+    0 5px 10px #0320470c;
   isolation: isolate;
 }
 .smartphone::before {
@@ -308,7 +311,7 @@ a:focus-visible {
   position: absolute;
   width: 3px;
   border-radius: 3px;
-  background: #1d3554;
+  background: var(--navy);
 }
 .smartphone-button-volume {
   left: -4px;
@@ -349,7 +352,7 @@ a:focus-visible {
   transition: color 0.2s;
 }
 .explore-link:hover {
-  color: var(--blue);
+  color: var(--navy);
 }
 .explore-link .icon {
   width: 16px;
@@ -402,7 +405,7 @@ h2 {
   margin: 0;
 }
 .title-dot {
-  color: var(--blue);
+  color: var(--accent);
 }
 .section-intro {
   max-width: 330px;
@@ -438,8 +441,8 @@ h3 {
 }
 .resource-card:hover {
   transform: translateY(-5px);
-  border-color: #b9cce8;
-  box-shadow: 0 12px 24px #0f223d06;
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px #03204706;
 }
 .card-top {
   display: flex;
@@ -452,8 +455,8 @@ h3 {
   place-items: center;
   width: 44px;
   height: 44px;
-  background: #f0f5fc;
-  color: #3768a9;
+  background: var(--accent-soft);
+  color: var(--navy);
   border-radius: 10px;
 }
 .icon-box .icon {
@@ -518,7 +521,7 @@ h3 {
 .step-marker .icon {
   width: 20px;
   height: 20px;
-  color: #7085a1;
+  color: var(--navy);
 }
 .step h3 {
   margin: 0 0 12px;
@@ -577,7 +580,7 @@ h3 {
 }
 .team-info .team-role {
   font-size: 11px;
-  color: #4774af;
+  color: var(--navy);
   margin: 0 0 14px;
 }
 .team-info p {
@@ -616,7 +619,7 @@ h3 {
   letter-spacing: -1.6px;
 }
 .about-title h2 > span {
-  color: #7c9dcc;
+  color: var(--accent);
 }
 .academic-label {
   display: flex;
@@ -628,7 +631,7 @@ h3 {
   color: #b0c2d9;
 }
 .academic-label .status-dot {
-  background: #85a9db;
+  background: var(--accent);
 }
 .about-copy {
   padding-top: 3px;
@@ -689,8 +692,11 @@ h3 {
   color: #e8eff9;
   transition: color 0.2s;
 }
+.about-link:focus-visible {
+  outline-color: var(--accent);
+}
 .about-link:hover {
-  color: #a9c9ff;
+  color: var(--accent);
 }
 .about-link .icon {
   width: 16px;
@@ -708,16 +714,11 @@ h3 {
   padding-bottom: 36px;
 }
 .footer-top .brand {
-  font-size: 12px;
-  letter-spacing: 1.4px;
+  width: 164px;
+  height: 40px;
 }
-.footer-top .brand-symbol {
-  width: 29px;
-  height: 29px;
-}
-.footer-top .brand-symbol .icon {
-  width: 20px;
-  height: 20px;
+.footer-top .brand-wordmark {
+  font-size: 24px;
 }
 .footer-top p {
   font-size: 11px;
@@ -736,7 +737,10 @@ h3 {
   transition: color 0.2s;
 }
 .footer-nav a:hover {
-  color: var(--blue);
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 5px;
 }
 .footer-bottom {
   display: flex;
@@ -798,10 +802,7 @@ h3 {
   .main-nav {
     gap: 18px;
   }
-  .brand {
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
+
   .button-small {
     padding: 11px 13px;
     font-size: 11px;
@@ -823,9 +824,7 @@ h3 {
   .container {
     width: calc(100% - 48px);
   }
-  .brand {
-    font-size: 14px;
-  }
+
   .header-cta {
     display: none;
   }
@@ -907,7 +906,7 @@ h3 {
     gap: 0;
     padding: 15px 24px 25px;
     background: #fff;
-    box-shadow: 0 20px 24px #0f223d0c;
+    box-shadow: 0 20px 24px #0320470c;
     max-height: calc(100dvh - var(--header-height));
     overflow-y: auto;
     border-bottom: 1px solid var(--line);
@@ -923,7 +922,11 @@ h3 {
     display: none;
   }
   .nav-link.is-active {
-    color: var(--blue);
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
   }
   .nav-cta {
     display: inline-flex;
@@ -941,12 +944,11 @@ h3 {
     width: calc(100% - 40px);
   }
   .brand {
-    font-size: 13px;
-    letter-spacing: 1.2px;
+    width: 164px;
+    height: 40px;
   }
-  .brand-symbol {
-    width: 31px;
-    height: 31px;
+  .brand-wordmark {
+    font-size: 24px;
   }
   .hero {
     min-height: 815px;
