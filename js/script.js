@@ -44,7 +44,7 @@
     if (menuButton.getAttribute("aria-expanded") !== "true") return;
     if (event.key === "Escape") closeMenu(true);
     if (event.key === "Tab" && mobileViewport.matches) {
-      const lastLink = navigation.querySelector(".nav-cta");
+      const lastLink = navLinks[navLinks.length - 1];
       if (event.shiftKey && document.activeElement === menuButton) {
         event.preventDefault();
         lastLink.focus();
@@ -82,16 +82,6 @@
     document
       .querySelectorAll("main section[id]")
       .forEach((section) => sectionObserver.observe(section));
-    const demonstrationObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && window.location.hash === "#demonstracao")
-            setActiveLink("demonstracao");
-        });
-      },
-      { threshold: 0.6 },
-    );
-    demonstrationObserver.observe(document.getElementById("demonstracao"));
     if (!reducedMotion.matches) {
       const revealObserver = new IntersectionObserver(
         (entries) => {

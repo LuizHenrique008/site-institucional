@@ -113,37 +113,6 @@ a:focus-visible {
 .skip-link:focus {
   transform: translateY(0);
 }
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  background: var(--accent);
-  color: var(--navy);
-  border: 1px solid var(--accent);
-  border-radius: 7px;
-  font-weight: 550;
-  transition:
-    background 0.2s,
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-.button:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 12px #03204715;
-}
-.button-small {
-  padding: 12px 18px;
-  font-size: 12px;
-  line-height: 1.4;
-  white-space: nowrap;
-}
-.button .icon {
-  width: 16px;
-  height: 16px;
-}
 
 /* Identidade BoraVan: assinatura em itálico, branco e amarelo sobre marinho. */
 .site-header {
@@ -197,7 +166,6 @@ a:focus-visible {
   gap: 25px;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
 }
 .nav-link {
   position: relative;
@@ -225,8 +193,7 @@ a:focus-visible {
 .nav-link.is-active::after {
   transform: scaleX(1);
 }
-.menu-toggle,
-.nav-cta {
+.menu-toggle {
   display: none;
 }
 
@@ -803,10 +770,6 @@ h3 {
     gap: 18px;
   }
 
-  .button-small {
-    padding: 11px 13px;
-    font-size: 11px;
-  }
   .nav-link {
     font-size: 11px;
   }
@@ -825,9 +788,6 @@ h3 {
     width: calc(100% - 48px);
   }
 
-  .header-cta {
-    display: none;
-  }
   .main-nav {
     margin: 0 0 0 auto;
     gap: 21px;
@@ -927,13 +887,6 @@ h3 {
     text-decoration-color: var(--accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
-  }
-  .nav-cta {
-    display: inline-flex;
-    align-self: flex-start;
-    margin-top: 15px;
-    padding: 13px 18px;
-    font-size: 12px;
   }
 }
 @media (max-width: 760px) {
